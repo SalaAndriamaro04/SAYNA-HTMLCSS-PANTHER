@@ -231,7 +231,7 @@ body{
 }
 
 .right .tenue{
-    margin-left: 10%;
+    margin-left: 15%;
     margin-top: 60%;
 }
 .right .tenue img{
@@ -241,7 +241,7 @@ body{
 /*contact*/
 .contact{
     background-image: url(../images/accueil/Pantherhome7.png);
-    padding-bottom: 20%;
+    padding-bottom: 10%;
     padding-top: 5%;
     margin-left: -40%;
 }
@@ -301,11 +301,38 @@ input[type="submit"]:hover{
 }
 
 /*footer*/
+/*partie gauche*/
 .footer{
     background-image: url(../images/all/back_footer.png);
     display: grid;
     grid-template-columns: 50% 50%;
+    background-position: center;
+    padding-top: 30%;
+    padding-bottom: 5%;
+    margin-bottom: -10%;
 }
+.footer .image-footer{
+    margin-right: 15%;
+    margin-top: -30%;
+    position: relative;
+}
+.footer .right-footer{
+    margin-top: -35%;
+}
+.footer .image-footer .marvel{
+    position:absolute;
+    top: 45%;
+    left: 65%;
+}
+.footer .image-footer .marvel img{
+    width: 80%;
+}
+.footer .image-footer img{
+    float: right;
+    width: 40%;
+}
+
+/*partie droite*/
 .footer .right-footer{
     display: grid;
     grid-template-rows:80% 20% ;
@@ -313,6 +340,33 @@ input[type="submit"]:hover{
 .footer .right-footer .suivre{
     display: grid;
     grid-template-columns: 50% 50%;
+}
+h4{
+    color: var(--blanc);
+    font-family: "Cantarell";
+    font-size: 16px;
+}
+footer .text-footer{
+    margin-top: 10%;
+}
+footer .text-footer p{
+    color: var(--blanc);
+    font-family: "Cantarell";
+    font-size: 10px;
+}
+.footer .right-footer .social-symbole img{
+    margin: 10px;
+}
+.footer .right-footer .suivre .suivre-social{
+    margin-left: -30%;
+}
+.footer .right-footer .loi{
+    margin-top: -3%;
+}
+.footer .right-footer .loi p{
+    color: var(--blanc);
+    font-size: 10px;
+    font-family: "Cantarell";
 }
 
 
