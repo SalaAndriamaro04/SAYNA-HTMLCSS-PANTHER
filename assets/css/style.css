@@ -1,0 +1,321 @@
+/*---------------------------------------------------------------------------------------------*/
+/*-------------------------------------CSS for all page---------------------------------------*/
+/*----------------------------------------§§§--------------------------------------------------*/
+
+                                    /*font à utiliser*/
+/*BEYNO*/
+@font-face {
+    font-family: BEYNO;
+    src: url("../fonts/BEYNO/BEYNO.ttf");
+}
+/*Panthera*/
+@font-face {
+    font-family: Panthera;
+    src: url(../fonts/Panthera/PantheraRegular-MVZ9J.ttf);
+}
+/*Wakanda forever*/
+@font-face {
+    font-family: Wakanda forever;
+    src: url(../fonts/Wakanda/WakandaForever-Regular.ttf);
+}
+/*Cantarell*/
+@font-face {
+    font-family: Cantarell;
+    src: url(../fonts/Cantarell/Cantarell-Regular.ttf);
+}
+
+/*couleurs*/
+:root{
+    --blanc: #FFFFFF;
+    --blanc-rose: #F2CEF2;
+    --gris-clair: #9E91B7;
+    --rose-foncee: #DF99F2;
+    --violet: #3D2DA6;
+    --bleu-noir: #07338C;
+    --noir:#021740; /* rgb(2,23,64) */
+}
+/*typograhies*/
+h1{
+    font-family: "Panthera";
+    font-size: 68px;
+    color: var(--rose-foncee);
+    line-height: 5px;
+}
+
+h2{
+    font-family: "BEYNO";
+    font-size: 32px;
+    color: var(--rose-foncee);
+    font-weight: 300;
+    line-height: 30px;
+}
+/*
+h2{
+    font-family: "Wakanda forever";
+    font-size: 43px;
+}
+#texte-enigme{
+    font-family: "Wakanda forever";
+    font-size: 43px;
+}
+*/
+html {
+    font-size: 1.17vw;
+    font-family: "Cantarell";
+    margin-bottom: 50px;
+}
+.citation{
+    font-family: "Cantarell";
+    font-size: 1.02;
+    color: var(--blanc);
+}
+footer{
+    font-family: "Cantarell";
+    font-size: 10px;
+}
+
+.histoire{
+    color: var(--blanc);
+    font-size: 16px;
+}
+
+
+
+/*à effacer
+div{
+    border: 2px solid red;
+}
+*/
+
+
+
+
+
+
+body{
+    background: url(../images/all/arrière_plan.png);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+
+/*barre laterale*/
+.container .barre-laterale{
+    margin: 50px;
+}
+
+/*design header*/
+.style-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.style-header .logo img{
+    vertical-align: middle;
+}
+.style-header ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px;
+    font-family: "BEYNO";
+}
+.style-header ul li a{
+    color: var(--rose-foncee);
+}
+.style-header ul li .wakanda{
+    color: var(--blanc);
+    text-decoration: none;
+}
+.style-header ul li .enigme{
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+/*presentation*/
+.presentation{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin-top: 30px;
+}
+.presentation .text-presentation{
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+.presentation .image-presentation img{
+    width: 700px;
+}
+.description{
+    color: var(--blanc);
+    font-family: "Cantarell";
+}
+
+/*acteur et actrice*/
+.acteur{
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 3fr 4fr 3fr;
+    background: var(--noir);
+    margin-left: 70px;
+    margin-top: 10%;
+}
+.acteur .killmonger img{
+    width: 85%;
+}
+
+/*biographie*/
+.bio{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin-top: 10%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bio .naissance{
+    margin-left: 5%;
+    margin-top: 20%;
+}
+.bio .histoire{
+    font-family: "Cantarell";
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.bio .right .biographie{
+    background:var(--gris-clair);
+    margin-left: 10%;
+    margin-top: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
+    border-radius: 20px;
+    align-items: center;
+}
+.bio .right .biographie img{
+    margin-top: -60%;
+    width: 90%;
+    margin-left: 5%;
+}
+.right .biographie .nom{
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+}
+.right .biographie .appellation{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.right .biographie .appellation a{
+    color: var(--blanc);
+    text-decoration: none;
+}
+.right .biographie .appellation .btn-appel{
+    background: var(--violet);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.right .biographie .text-biographie p{
+    font-size:16px ;
+    font-family: "Cantarell";
+}
+
+.right .biographie .text-biographie p span{
+    color: var(--noir);
+    font-family: "Cantarell";
+    font-size:16px ;
+    font-weight: 700;
+}
+
+.right .tenue{
+    margin-left: 10%;
+    margin-top: 60%;
+}
+.right .tenue img{
+    width: 80%;
+}
+
+/*contact*/
+.contact{
+    background-image: url(../images/accueil/Pantherhome7.png);
+    padding-bottom: 20%;
+    padding-top: 5%;
+    margin-left: -40%;
+}
+.contact .form-contact{
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 44%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    background: linear-gradient(
+        to bottom, #FFFFFF 15%, #02174000
+    );
+    border-radius: 200px;
+}
+.contact .form-contact p{
+    font-size:16px ;
+    font-family: "Cantarell";
+    line-height: 5px;
+    color: var(--noir);
+}
+.contact .form-contact .style-contact{
+    font-size: 50px;
+    font-weight: bold;
+}
+.contact .form-contact input{
+    margin: 10px;
+    padding-left: 20px;
+    width: 520px;
+    height: 56px;
+    border: 1px solid var(--bleu-noir);
+    border-radius: 38px;
+    background: transparent;
+}
+.contact .form-contact textarea{
+    margin: 10px;
+    width: 520px;
+    padding-left: 3%;
+    padding-right: -2%;
+    padding-top: 2%;
+    border-color: 1px solid var(--bleu-noir);
+    border-radius: 38px;
+    background: transparent;
+}
+.contact .form-contact input[type="submit"]{
+    background: var(--blanc-rose);
+    width: 174px;
+    height: 54px;
+    border-color: 1px solid var(--bleu-noir);
+    border-radius: 38px;
+    margin: 0 auto;
+}
+input[type="submit"]:hover{
+    box-shadow: var(--violet);
+}
+
+/*footer*/
+.footer{
+    background-image: url(../images/all/back_footer.png);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.footer .right-footer{
+    display: grid;
+    grid-template-rows:80% 20% ;
+}
+.footer .right-footer .suivre{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+
+
+
