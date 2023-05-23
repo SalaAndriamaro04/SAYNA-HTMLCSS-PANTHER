@@ -103,9 +103,39 @@ body{
     grid-template-columns: 5% 95%;
 }
 
-/*barre laterale*/
+/*barre laterale
 .container .barre-laterale{
     margin: 3.66vw;
+    position: fixed;
+}*/
+
+.vertical-line1 {
+    border-left: 3px solid var(--gris-clair);
+    min-height: 30vw;
+    margin-top: -15%;
+}
+
+.vertical-line2 {
+    border-left: 3px solid var(--gris-clair); 
+    height: 19.8vw;
+    margin-top: -800%;
+}
+
+.vertical-icon {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-left: 14px;
+}
+.vertical-icon .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    list-style-type: none;
+    margin-left: -3.2vw;
+    margin-top: -250%;
+}
+.vertical-icon .icons img {
+    width: 16px;
 }
 
 /*design header*/
@@ -157,14 +187,35 @@ body{
 
 /*acteur et actrice*/
 .acteur{
-    display: grid;
-    grid-template-columns: 1fr 4fr 5fr 3fr 5fr 2fr;
-    background: var(--noir);
-    margin-left: 5.12vw;
-    margin-top: 10%;
+    display: flex;
+    margin-left: 10vw;
+    background-color: var(--noir);
+    height: 30vh;
 }
-.acteur .killmonger img{
-    width: 85%;
+.acteur .img{
+    width: 15vw;
+    height: 30vh;
+}
+.acteur #killmonger{
+    margin-left: 2rem;
+    position: relative;
+    top: -2rem;
+    height: 40vh;
+}
+.textacteur {
+    margin: 2rem;
+    color: white;
+}
+.textacteur h1{
+    color: var(--gris);
+    font-size: 1.2rem;
+}
+.textacteur p{
+    font-size: 0.7rem;
+}
+.acteur .textacteur a{
+    color: white;
+    font-size: 0.8rem;
 }
 
 /*biographie*/
