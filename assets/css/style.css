@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------------------------------------*/
-/*-------------------------------------CSS for all page---------------------------------------*/
+/*-------------------------------------CSS for all pages---------------------------------------*/
 /*----------------------------------------§§§--------------------------------------------------*/
 
                                     /*font à utiliser*/
@@ -23,7 +23,6 @@
     font-family: Cantarell;
     src: url(../fonts/Cantarell/Cantarell-Regular.ttf);
 }
-
 /*couleurs*/
 :root{
     --blanc: #FFFFFF;
@@ -40,391 +39,65 @@ html {
     margin-bottom: 3.66vw;
     overflow-x: hidden;
 }
-/*typograhies*/
-h1{
-    font-family: "Panthera";
-    font-size: 4.97vw;
-    color: var(--rose-foncee);
-    line-height: 0.36vw;
-}
-
-h2{
-    font-family: "BEYNO";
-    font-size: 2em;
-    color: var(--rose-foncee);
-    font-weight: 300;
-    line-height: 2.19vw;
-}
-/*
-h2{
-    font-family: "Wakanda forever";
-    font-size: 43px;
-}
-#texte-enigme{
-    font-family: "Wakanda forever";
-    font-size: 43px;
-}
-*/
-
-.citation{
-    font-family: "Cantarell";
-    font-size: 1.02vw;
+/*animation menu de navigation*/
+#header .style-header a:hover{
     color: var(--blanc);
-}
-footer{
-    font-family: "Cantarell";
-    font-size: 0.73vw;
+    text-decoration: underline;
 }
 
-.histoire{
-    color: var(--blanc);
-    font-size: 1em;
+/* animation enigme boutton ENVOYER || Effet de surbrillance */
+.langage button[type='submit']:hover {
+    box-shadow: 0px 0px 20px #F2CEF2;
+    cursor: pointer;
 }
 
-
-
-/*à effacer
-div{
-    border: 2px solid red;
-}
-*/
-
-
-
-
-
-
-body{
-    background: url(../images/all/arrière_plan.png);
+/*animation contact boutton ENVOYER*/
+.contact button[type='submit']:hover{
+    box-shadow: 0px 0px 20px #021740;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 5% 95%;
+/*animation logo reseaux sociaux || coloration*/
+.container .vertical-icon ul a img:hover{
+    filter: brightness(0) invert(1) grayscale(100%) brightness(1);
 }
 
-/*barre laterale
-.container .barre-laterale{
-    margin: 3.66vw;
+/*animation logo header || coloration*/
+.style-header .logo a img:hover{
+    filter: brightness(70%) saturate(200%) contrast(150%) hue-rotate(270deg);
+}
+
+/*animation footer || zoom*/
+.image-footer:hover{
+    transform: scale(1.1);
+}
+.right-footer img:hover{
+    transform: scale(1.1);
+}
+
+/* definition fade in venant de gauche*/
+@keyframes fade-in {
+    from {
+        opacity: 0; /* from opacity 0 */
+        transform: translateX(-50px); /* from left -50px */
+    }
+    to {
+        opacity: 1; /* to opacity 1 */
+        transform: translateX(0); /* to true position */
+    }
+}
+
+/* Fade in */
+section, .container, #header {
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+/* animation aside page d'accueil || position fixe */
+.scrolling {
     position: fixed;
-}*/
-
-.vertical-line1 {
-    border-left: 3px solid var(--gris-clair);
-    min-height: 30vw;
-    margin-top: -15%;
 }
-
-.vertical-line2 {
-    border-left: 3px solid var(--gris-clair); 
-    height: 19.8vw;
-    margin-top: -800%;
-}
-
-.vertical-icon {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    margin-left: 14px;
-}
-.vertical-icon .icons {
-    display: flex;
-    flex-direction: column;
-    gap: 1vw;
-    list-style-type: none;
-    margin-left: -3.2vw;
-    margin-top: -250%;
-}
-.vertical-icon .icons img {
-    width: 16px;
-}
-
-/*design header*/
-.style-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin:0 auto;
-}
-.style-header .logo img{
-    vertical-align: middle;
-}
-.style-header ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 1.09vw;
-    font-family: "BEYNO";
-}
-.style-header ul li a{
-    color: var(--rose-foncee);
-}
-.style-header ul li .wakanda{
-    color: var(--blanc);
+/*animation boutton A propos et Wakanda*/
+.footer .right-footer .suivre .suivre-page p a{
     text-decoration: none;
-}
-.style-header ul li .enigme{
     color: var(--blanc);
-    text-decoration: none;
 }
-
-/*presentation*/
-.presentation{
-    display: grid;
-    grid-template-columns: 45% 55%;
-    margin-top: 2.19vw;
-}
-.presentation .text-presentation{
-    margin-top: 20%;
-    margin-bottom: 10%;
-}
-.presentation .image-presentation img{
-    width: 51.24vw;
-}
-.description{
-    color: var(--blanc);
-    font-family: "Cantarell";
-}
-
-/*acteur et actrice*/
-.acteur{
-    display: flex;
-    margin-left: 10vw;
-    background-color: var(--noir);
-    height: 30vh;
-}
-.acteur .img{
-    width: 15vw;
-    height: 30vh;
-}
-.acteur #killmonger{
-    margin-left: 2rem;
-    position: relative;
-    top: -2rem;
-    height: 40vh;
-}
-.textacteur {
-    margin: 2rem;
-    color: white;
-}
-.textacteur h1{
-    color: var(--gris);
-    font-size: 1.2rem;
-}
-.textacteur p{
-    font-size: 0.7rem;
-}
-.acteur .textacteur a{
-    color: white;
-    font-size: 0.8rem;
-}
-
-/*biographie*/
-.bio{
-    display: grid;
-    grid-template-columns: 55% 45%;
-    margin-top: 10%;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.bio .naissance{
-    margin-left: 5%;
-    margin-top: 20%;
-}
-.bio .histoire{
-    font-family: "Cantarell";
-    font-size: 1em;
-    margin-bottom: 30px;
-}
-.bio .right .biographie{
-    background:var(--gris-clair);
-    margin-left: 10%;
-    margin-top: 50%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 20%;
-    border-radius: 1.46vw;
-    align-items: center;
-}
-.bio .right .biographie img{
-    margin-top: -60%;
-    width: 90%;
-    margin-left: 5%;
-}
-.right .biographie .nom{
-    font-size: 28px;
-    text-align: center;
-    font-weight: bold;
-}
-.right .biographie .appellation{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2.04vw;
-}
-.right .biographie .appellation a{
-    color: var(--blanc);
-    text-decoration: none;
-}
-.right .biographie .appellation .btn-appel{
-    background: var(--violet);
-    padding-top: 0.36vw;
-    padding-bottom: 0.36vw;
-    padding-left: 0.73vw;
-    padding-right: 0.73vw;
-    border-radius: 0.36vw;
-}
-.right .biographie .text-biographie p{
-    font-size: 1em;
-    font-family: "Cantarell";
-}
-
-.right .biographie .text-biographie p span{
-    color: var(--noir);
-    font-family: "Cantarell";
-    font-size: 1em;
-    font-weight: 700;
-}
-
-.right .tenue{
-    margin-left: 15%;
-    margin-top: 60%;
-}
-.right .tenue img{
-    width: 80%;
-}
-
-/*contact*/
-.contact{
-    background-image: url(../images/accueil/Pantherhome7.png);
-    padding-bottom: 10%;
-    padding-top: 5%;
-    margin-left: -40%;
-}
-.contact .form-contact{
-    width: 50vw;
-    margin-top: 10%;
-    margin-left: 44%;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
-    text-align: center;
-    background: linear-gradient(
-        to bottom, #FFFFFF 15%, #02174000
-    );
-    border-radius: 14.64vw;
-}
-.contact .form-contact p{
-    font-size: 1em;
-    font-family: "Cantarell";
-    line-height: 0.36vw;
-    color: var(--noir);
-}
-.contact .form-contact .style-contact{
-    font-size: 3.66vw;
-    font-weight: bold;
-}
-.contact .form-contact input{
-    margin: 0.73vw;
-    padding-left: 1.46vw;
-    width: 38.06vw;
-    height: 4.09vw;
-    border: 0.07vw solid var(--bleu-noir);
-    border-radius: 2.78vw;
-    background: transparent;
-}
-.contact .form-contact textarea{
-    margin: 0.73vw;
-    width: 38.06vw;
-    padding-left: 3%;
-    padding-right: -2%;
-    padding-top: 2%;
-    border-color: 0.07vw solid var(--bleu-noir);
-    border-radius: 2.78vw;
-    background: transparent;
-}
-.contact .form-contact input[type="submit"]{
-    background: var(--blanc-rose);
-    width: 12.73vw;
-    height: 3.95vw;
-    border-color: 0.07vw solid var(--bleu-noir);
-    border-radius: 2.78vw;
-    margin: 0 auto;
-}
-input[type="submit"]:hover{
-    box-shadow: var(--violet);
-}
-
-/*footer*/
-/*partie gauche*/
-.footer{
-    background-image: url(../images/all/back_footer.png);
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-position: center;
-    padding-top: 30%;
-    padding-bottom: 3%;
-    margin-bottom: -10%;
-}
-.footer .image-footer{
-    margin-right: 15%;
-    margin-top: -40%;
-    position: relative;
-}
-.footer .right-footer{
-    margin-top: -45%;
-}
-.footer .image-footer .marvel{
-    position:absolute;
-    top: 8vw;
-    left: 27.5vw;
-}
-.footer .image-footer .marvel img{
-    width: 10vw;
-}
-.footer .image-footer img{
-    float: right;
-    width: 40%;
-}
-
-/*partie droite*/
-.footer .right-footer{
-    display: grid;
-    grid-template-rows:80% 20% ;
-}
-.footer .right-footer .suivre{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-h4{
-    color: var(--blanc);
-    font-family: "Cantarell";
-    font-size: 1em;
-    letter-spacing: 1em;
-}
-
-footer .text-footer{
-    margin-top: 10%;
-}
-footer .text-footer p{
-    color: var(--blanc);
-    font-family: "Cantarell";
-    font-size: 0.73vw;
-}
-.footer .right-footer .social-symbole img{
-    margin: 0.73vw;
-}
-.footer .right-footer .suivre .suivre-social{
-    margin-left: -30%;
-    margin-bottom: 5%;
-}
-.footer .right-footer .loi p{
-    color: var(--blanc);
-    font-size: 0.73vw;
-    font-family: "Cantarell";
-}
-
-
-
-
-

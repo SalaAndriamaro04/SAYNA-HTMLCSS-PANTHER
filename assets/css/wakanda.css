@@ -2,44 +2,6 @@
 /*-------------------------------------CSS for wakanda---------------------------------------*/
 /*----------------------------------------§§§--------------------------------------------------*/
 
-                                    /*font à utiliser*/
-/*BEYNO*/
-@font-face {
-    font-family: BEYNO;
-    src: url("../fonts/BEYNO/BEYNO.ttf");
-}
-/*Panthera*/
-@font-face {
-    font-family: Panthera;
-    src: url(../fonts/Panthera/PantheraRegular-MVZ9J.ttf);
-}
-/*Wakanda forever*/
-@font-face {
-    font-family: Wakanda forever;
-    src: url(../fonts/Wakanda/WakandaForever-Regular.ttf);
-}
-/*Cantarell*/
-@font-face {
-    font-family: Cantarell;
-    src: url(../fonts/Cantarell/Cantarell-Regular.ttf);
-}
-
-/*couleurs*/
-:root{
-    --blanc: #FFFFFF;
-    --blanc-rose: #F2CEF2;
-    --gris-clair: #9E91B7;
-    --rose-foncee: #DF99F2;
-    --violet: #3D2DA6;
-    --bleu-noir: #07338C;
-    --noir:#021740; /* rgb(2,23,64) */
-}
-html {
-    font-size: 1vw;
-    font-family: "Cantarell";
-    margin-bottom: 3.66vw;
-    overflow-x: hidden;
-}
 /*typograhies*/
 h1{
     font-family: "BEYNO";
@@ -121,7 +83,7 @@ p{
     text-align: justify;
 }
 
-/*partie principal*/
+                /*partie principal*/
 /*partie 1*/
 .partie-un{
     width: 90%;
@@ -168,12 +130,6 @@ p{
     margin-left: -15%;
     margin-top: -5%;
 }
-
-
-
-
-
-
 
 /*footer*/
 /*partie gauche*/

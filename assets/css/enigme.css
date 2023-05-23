@@ -2,51 +2,8 @@
 /*-------------------------------------CSS for enigme---------------------------------------*/
 /*----------------------------------------§§§--------------------------------------------------*/
 
-                                    /*font à utiliser*/
-/*BEYNO*/
-@font-face {
-    font-family: BEYNO;
-    src: url("../fonts/BEYNO/BEYNO.ttf");
-}
-/*Panthera*/
-@font-face {
-    font-family: Panthera;
-    src: url(../fonts/Panthera/PantheraRegular-MVZ9J.ttf);
-}
-/*Wakanda forever*/
-@font-face {
-    font-family: Wakanda forever;
-    src: url(../fonts/Wakanda/WakandaForever-Regular.ttf);
-}
-/*Cantarell*/
-@font-face {
-    font-family: Cantarell;
-    src: url(../fonts/Cantarell/Cantarell-Regular.ttf);
-}
-
-/*couleurs*/
-:root{
-    --blanc: #FFFFFF;
-    --blanc-rose: #F2CEF2;
-    --gris-clair: #9E91B7;
-    --rose-foncee: #DF99F2;
-    --violet: #3D2DA6;
-    --bleu-noir: #07338C;
-    --noir:#021740; /* rgb(2,23,64) */
-}
-html {
-    font-size: 1.17vw;
-    font-family: "Cantarell";
-    margin-bottom: 3.66vw;
-}
 /*typograhies*/
-/*h1{
-    font-family: "Panthera";
-    font-size: 4.97vw;
-    color: var(--rose-foncee);
-    line-height: 0.36vw;
-}
-*/
+
 h1{
     font-family: "BEYNO";
     font-size: 2em;
@@ -102,11 +59,13 @@ body{
 .presentation{
     display: grid;
     grid-template-columns: 55% 45%;
+    padding-top: -30%;
+    margin-top: -2%;
 }
 .presentation .image-presentation img{
     width: 65.88vw;
-    margin-top: -20%;
-    margin-left: -3%;
+    padding-top: -100%;
+    margin-left: -3%;  
 }
 .presentation .contenu-presentation{
     margin-left: -10%;
@@ -115,6 +74,7 @@ body{
     margin-top: 15%;
     padding-top: 1.46vw;
     padding-bottom: 1.46vw;
+    padding-right: 10%;
     letter-spacing: 0.36vw;
     margin-bottom: 8%;
     margin-left: 5%;
@@ -195,14 +155,15 @@ body{
     margin-left: 30%;
     margin-top: 10%;
 }
-.langage .savoir .transcription .reponse input[type="submit"]{
+.langage .savoir .transcription .reponse button{
     color: var(--noir);
-    background: var(--rose-foncee);
-    border: 1px solid var(--rose-foncee);
-    border-radius: 2.78vw;
-    font-weight: bold;
+    background: var(--blanc-rose);
     width: 12.73vw;
-    height: 4.09vw;
+    height: 3.95vw;
+    border-color: 0.07vw solid var(--bleu-noir);
+    border-radius: 2.78vw;
+    margin: 0 auto;
+    font-size: 1em;
 }
 .langage .savoir .savais-tu .conteneur-text{
     position: relative;

@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/accueil.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Accueil</title>
 </head>
 <body>
     <div class="container">
                                     <!-- Barre laterale -->
-            <aside>
+            <aside> 
+                <div class="scrolling">
                     <div class="vertical-line1"></div>
                     <div class="vertical-icon">
                         <div class="vertical-line2"></div>
@@ -38,16 +39,17 @@
                                 </li>
                         </ul>
                     </div>
+                </div>
             </aside>
 
         <div>
                                     <!-- Entête de la page -->
         <header id="header">
             <div class="style-header">
-                <div class="logo"> 
-                    <img src="./assets/images/all/icon_SAYNA.png">
-                    <img src="./assets/images/all/icon_x.png">
-                    <img src="./assets/images/all/icon_MARVEL.png">
+                <div class="logo">
+                    <a href="#header"><img src="./assets/images/all/icon_SAYNA.png"></a>
+                    <a href="#header"><img src="./assets/images/all/icon_x.png"></a>
+                    <a href="#header"><img src="./assets/images/all/icon_MARVEL.png"></a>
                 </div>
                 <nav>
                     <ul>
@@ -84,33 +86,40 @@
                                     <!-- Contenu principal-->
     <main>
                                     <!-- acteur et actrice-->
-        <section class="acteur">
-            <img src="./assets/images/accueil/Pantherhome2.png" id="killmonger" alt="killmonger">
+        <section id="acteur">
+            <img src="./assets/images/accueil/Pantherhome2.png" id="killmonger">
             <div class="textacteur">
-                <h1>KILLMONGER</h1>
-                <P>La sauvagerie de N'Jadaka alors qu'il servait dans une 
+                <h2>KILLMONGER</h2>
+                <p>La sauvagerie de N'Jadaka alors qu'il servait dans une 
                     unité d'opérations noires de l'armée américaine lui a 
                     valu le surnom de Killmonger. D’origine Wakandaise, 
                     et se sentant abandoné par sa nation, il cherche à 
                     détroner T’Challa dans une quête vers le pourvoir.
-                </P>
-                <a href="">voir plus ></a>
+                
+                <br><a href="#">Voir plus ></a>
+                </p>
             </div>
-            <img src="./assets/images/accueil/Pantherhome3.png" class="img" alt="okoye">
+            <img src="./assets/images/accueil/Pantherhome3.png" class="img">
             <div class="textacteur">
-                <h1>OKOYE</h1>
+                <h2>OKOYE</h2>
                 <p>Okoye est le général des Dora Milaje (groupe d’élite 
                     de femmes guerrières) et le chef des forces armées et 
                     des renseignements wakandais. Témoin du 
                     couronnement de T'Challa, elle se joint à lui dans de 
                     nombreuses aventures.
+                
+                <br><a href="#">Voir plus ></a>
                 </p>
-                <a href="">voir plus ></a>
             </div>
-            <img src="./assets/images/accueil/Pantherhome4.png" class="img" alt="actrice">
+            <div class="fillette">
+                <img src="./assets/images/accueil/Pantherhome4.png" class="img">
+                <div class="rond">
+                    &gt;
+                </div>
+            </div>
         </section>
                                         <!-- personnage principal -->
-        <section>
+        <section id="bio">
             <div class="bio">
                 <div class="naissance">
                     <h2>
@@ -251,7 +260,7 @@
                     <input type="text" placeholder="Nom">
                     <br><input type="email" placeholder="Email">
                     <br><textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-                    <br><input type="submit" name="ENVOYER">
+                    <br><button type="submit">ENVOYER</button>
                 </div>
             </div>
         </section>
@@ -268,17 +277,21 @@
                         <div class="suivre-page">
                             <h4>PAGES</h4>
                             <div class="text-footer">
-                                <p>A propos</p>
-                                <p>Wakanda</p>
+                                <p><a href="#acteur"> A propos </a></p>
+                                <p><a href="./wakanda.html"> Wakanda </a></p>
                             </div>
                         </div>
                         <div class="suivre-social">
                             <h4>RETROUVEZ NOUS</h4>
                             <div class="social-symbole">
-                                <img src="./assets/images/all/footer3.png">
-                                <img src="./assets/images/all/footer4.png">
-                                <img src="./assets/images/all/footer5.png">
-                                <img src="./assets/images/all/footer6.png">
+                                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                    <img src="./assets/images/all/footer3.png"></a>
+                                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                    <img src="./assets/images/all/footer4.png"></a>
+                                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                    <img src="./assets/images/all/footer5.png"></a>
+                                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                    <img src="./assets/images/all/footer6.png"></a>
                             </div>
                         </div>
                     </div>
