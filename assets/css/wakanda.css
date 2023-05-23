@@ -1,0 +1,250 @@
+/*---------------------------------------------------------------------------------------------*/
+/*-------------------------------------CSS for enigme---------------------------------------*/
+/*----------------------------------------§§§--------------------------------------------------*/
+
+                                    /*font à utiliser*/
+/*BEYNO*/
+@font-face {
+    font-family: BEYNO;
+    src: url("../fonts/BEYNO/BEYNO.ttf");
+}
+/*Panthera*/
+@font-face {
+    font-family: Panthera;
+    src: url(../fonts/Panthera/PantheraRegular-MVZ9J.ttf);
+}
+/*Wakanda forever*/
+@font-face {
+    font-family: Wakanda forever;
+    src: url(../fonts/Wakanda/WakandaForever-Regular.ttf);
+}
+/*Cantarell*/
+@font-face {
+    font-family: Cantarell;
+    src: url(../fonts/Cantarell/Cantarell-Regular.ttf);
+}
+
+/*couleurs*/
+:root{
+    --blanc: #FFFFFF;
+    --blanc-rose: #F2CEF2;
+    --gris-clair: #9E91B7;
+    --rose-foncee: #DF99F2;
+    --violet: #3D2DA6;
+    --bleu-noir: #07338C;
+    --noir:#021740; /* rgb(2,23,64) */
+}
+html {
+    font-size: 1vw;
+    font-family: "Cantarell";
+    margin-bottom: 3.66vw;
+    overflow-x: hidden;
+}
+/*typograhies*/
+h1{
+    font-family: "BEYNO";
+    font-size: 4.97vw;
+    color: var(--rose-foncee);
+    line-height: 0.36vw;
+    font-weight: 300;
+}
+h2{
+    font-family: "BEYNO";
+    font-size: 2em;
+    color: var(--rose-foncee);
+    font-weight: 300;
+}
+h3{
+    font-family: "Wakanda forever";
+    font-size: 3.14vw;
+    color: var(--rose-foncee);
+    font-weight: 300;
+}
+body{
+    background: url(../images/all/arrière_plan.png);
+}
+p{
+    font-family: "Cantarell";
+    font-size: 1em;
+    color: var(--blanc);
+}
+/*à effacer
+div{
+    border: 2px solid red;
+}
+*/
+
+/*design header*/
+.style-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin:0 auto;
+    z-index: 3;
+}
+.style-header .logo img{
+    vertical-align: middle;
+}
+.style-header ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1.09vw;
+    font-family: "BEYNO";
+}
+.style-header ul li a{
+    color: var(--rose-foncee);
+}
+
+.style-header nav ul li .accueil{
+    color: var(--blanc);
+    text-decoration: none;
+}
+.style-header nav ul li .enigme{
+    color: var(--blanc);
+    text-decoration: none;
+}
+/*design presentation*/
+.presentation {
+    background-image: url(../images/wakanda/Pantherwakanda1.png);
+    background-position: -8vw;
+    background-size: 120vw;
+    width: 100vw;
+    height: 35vw;
+    background-repeat: no-repeat;
+    padding-top: 10vw;
+    padding-left: 5vw;
+    padding-bottom: 0;
+    margin-bottom: 5%;
+}
+
+.presentation .wakanda-forever p{
+    color: var(--blanc);
+    width: 40%;
+    margin-right: 0;
+    margin-top: 2%;
+    text-align: justify;
+}
+
+/*partie principal*/
+/*partie 1*/
+.partie-un{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 5%;
+    background-image: url(../images/wakanda/Pantherwakanda2.png);
+    background-repeat: no-repeat;
+    background-size: 80vw;
+    background-position: 13vw -3vw;
+}
+.partie-un .left{
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 8%;
+    
+}
+.partie-un .right{
+    padding-left: 5%;
+    padding-right: 15%;
+    text-align: justify;
+}
+
+/*partie 2*/
+.partie-deux{
+    width: 90%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 5%;
+}
+.partie-deux .left{
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 8%;
+}
+.partie-deux .right{
+    padding-left: 5%;
+    padding-right: 15%;
+    text-align: justify;
+}
+.partie-deux .right .representation{
+    margin-left: -15%;
+    margin-top: -5%;
+}
+
+
+
+
+
+
+
+/*footer*/
+/*partie gauche*/
+.footer{
+    background-image: url(../images/all/back_footer.png);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-position: center;
+    padding-top: 30%;
+    padding-bottom: 3%;
+    margin-bottom: -10%;
+}
+.footer .image-footer{
+    margin-right: 15%;
+    margin-top: -40%;
+    position: relative;
+}
+.footer .right-footer{
+    margin-top: -45%;
+}
+.footer .image-footer .marvel{
+    position:absolute;
+    top: 8vw;
+    left: 27.5vw;
+}
+.footer .image-footer .marvel img{
+    width: 10vw;
+}
+.footer .image-footer img{
+    float: right;
+    width: 40%;
+}
+
+/*partie droite*/
+.footer .right-footer{
+    display: grid;
+    grid-template-rows:80% 20% ;
+}
+.footer .right-footer .suivre{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+h4{
+    color: var(--blanc);
+    font-family: "Cantarell";
+    font-size: 1em;
+    letter-spacing: 1em;
+}
+footer .text-footer{
+    margin-top: 10%;
+}
+footer .text-footer p{
+    color: var(--blanc);
+    font-family: "Cantarell";
+    font-size: 0.73vw;
+}
+.footer .right-footer .social-symbole img{
+    margin: 0.73vw;
+}
+.footer .right-footer .suivre .suivre-social{
+    margin-left: -30%;
+    margin-bottom: 5%;
+}
+.footer .right-footer .loi p{
+    color: var(--blanc);
+    font-size: 0.73vw;
+    font-family: "Cantarell";
+}
+

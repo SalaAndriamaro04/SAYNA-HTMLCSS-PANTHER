@@ -1,0 +1,296 @@
+/*---------------------------------------------------------------------------------------------*/
+/*-------------------------------------CSS for enigme---------------------------------------*/
+/*----------------------------------------§§§--------------------------------------------------*/
+
+                                    /*font à utiliser*/
+/*BEYNO*/
+@font-face {
+    font-family: BEYNO;
+    src: url("../fonts/BEYNO/BEYNO.ttf");
+}
+/*Panthera*/
+@font-face {
+    font-family: Panthera;
+    src: url(../fonts/Panthera/PantheraRegular-MVZ9J.ttf);
+}
+/*Wakanda forever*/
+@font-face {
+    font-family: Wakanda forever;
+    src: url(../fonts/Wakanda/WakandaForever-Regular.ttf);
+}
+/*Cantarell*/
+@font-face {
+    font-family: Cantarell;
+    src: url(../fonts/Cantarell/Cantarell-Regular.ttf);
+}
+
+/*couleurs*/
+:root{
+    --blanc: #FFFFFF;
+    --blanc-rose: #F2CEF2;
+    --gris-clair: #9E91B7;
+    --rose-foncee: #DF99F2;
+    --violet: #3D2DA6;
+    --bleu-noir: #07338C;
+    --noir:#021740; /* rgb(2,23,64) */
+}
+html {
+    font-size: 1.17vw;
+    font-family: "Cantarell";
+    margin-bottom: 3.66vw;
+}
+/*typograhies*/
+/*h1{
+    font-family: "Panthera";
+    font-size: 4.97vw;
+    color: var(--rose-foncee);
+    line-height: 0.36vw;
+}
+*/
+h1{
+    font-family: "BEYNO";
+    font-size: 2em;
+    color: var(--rose-foncee);
+    font-weight: 300;
+    line-height: 2.19vw;
+}
+
+h2{
+    font-family: "Wakanda forever";
+    font-size: 3.14vw;
+    color: var(--rose-foncee);
+    font-weight: 300;
+}
+#texte-enigme{
+    font-family: "Wakanda forever";
+    font-size: 3.14vw;
+}
+body{
+    background: url(../images/all/arrière_plan.png);
+}
+
+/*design header*/
+.style-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin:0 auto;
+}
+.style-header .logo img{
+    vertical-align: middle;
+}
+.style-header ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1.09vw;
+    font-family: "BEYNO";
+}
+.style-header ul li a{
+    color: var(--rose-foncee);
+}
+.style-header ul li .accueil{
+    color: var(--blanc);
+    text-decoration: none;
+}
+.style-header ul li .wakanda{
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+/*section presentation*/
+.presentation{
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+.presentation .image-presentation img{
+    width: 65.88vw;
+    margin-top: -20%;
+    margin-left: -3%;
+}
+.presentation .contenu-presentation{
+    margin-left: -10%;
+}
+.presentation .contenu-presentation .titre-presentation{
+    margin-top: 15%;
+    padding-top: 1.46vw;
+    padding-bottom: 1.46vw;
+    letter-spacing: 0.36vw;
+    margin-bottom: 8%;
+    margin-left: 5%;
+    margin-right: 20%;
+}
+.presentation .contenu-presentation .titre-presentation h1{
+    padding-right: 20%;
+    line-height: 120%;
+}
+.presentation .contenu-presentation .text-presentation .conteneur-text{
+    position: relative;
+    margin-left: -5%;
+    margin-top: -5%;
+}
+.presentation .contenu-presentation .text-presentation .conteneur-text img{
+    width: 85%;
+}
+.presentation .contenu-presentation .text-presentation .conteneur-text p{
+    color: var(--blanc);
+    font-family: "Cantarell";
+    font-size: 0.73vw;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*section langage*/
+.langage{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    width: 90%;
+    margin:0 auto;
+}
+.langage .mot-wakandais h2{
+    word-spacing: 0.73vw;
+    line-height: 4.39vw;
+    margin-right: 38%;
+    margin-top: 5%;
+    font-size: 2.34vw;
+}
+
+.langage .savoir{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 30%;
+}
+
+.langage .savoir .transcription{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.langage .savoir .transcription p{
+    color: var(--blanc);
+}
+.langage .savoir .transcription p span{
+    font-family: "Wakanda forever";
+    font-size: 1em;
+    line-height: 2.19vw;
+}
+.langage .savoir .transcription .alphabet{
+    margin-top: -20%;
+}
+.langage .savoir .transcription .reponse input[type="text"]{
+    color: var(--rose-foncee);
+    background: transparent;
+    width: 38.06vw;
+    height: 4.09vw;
+    border: 0.07vw solid var(--rose-foncee);
+    border-radius: 2.78vw;
+    padding-left: 5%;
+}
+.langage .savoir .transcription .reponse ::placeholder{
+    color: var(--rose-foncee);
+}
+.langage .savoir .transcription .reponse .envoie{
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.langage .savoir .transcription .reponse input[type="submit"]{
+    color: var(--noir);
+    background: var(--rose-foncee);
+    border: 1px solid var(--rose-foncee);
+    border-radius: 2.78vw;
+    font-weight: bold;
+    width: 12.73vw;
+    height: 4.09vw;
+}
+.langage .savoir .savais-tu .conteneur-text{
+    position: relative;
+    margin-left: -5%;
+    margin-top: -15%;
+}
+.langage .savoir .savais-tu .conteneur-text img{
+    width: 85%;
+}
+.langage .savoir .savais-tu .conteneur-text p{
+    color: var(--blanc);
+    font-family: "Cantarell";
+    font-size: 0.73vw;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 60%;
+    margin: 0 auto;
+}
+.langage .savoir .savais-tu .conteneur-text .text{
+    text-align: center;
+    margin-top: -5%;
+}
+
+/*footer*/
+/*partie gauche*/
+.footer{
+    background-image: url(../images/all/back_footer.png);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-position: center;
+    padding-top: 30%;
+    padding-bottom: 3%;
+    margin-bottom: -10%;
+}
+.footer .image-footer{
+    margin-right: 15%;
+    margin-top: -40%;
+    position: relative;
+}
+.footer .right-footer{
+    margin-top: -45%;
+}
+.footer .image-footer .marvel{
+    position:absolute;
+    top: 8vw;
+    left: 27.5vw;
+}
+.footer .image-footer .marvel img{
+    width: 10vw;
+}
+.footer .image-footer img{
+    float: right;
+    width: 40%;
+}
+
+/*partie droite*/
+.footer .right-footer{
+    display: grid;
+    grid-template-rows:80% 20% ;
+}
+.footer .right-footer .suivre{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+h4{
+    color: var(--blanc);
+    font-family: "Cantarell";
+    font-size: 1em;
+    letter-spacing: 1em;
+}
+footer .text-footer{
+    margin-top: 10%;
+}
+footer .text-footer p{
+    color: var(--blanc);
+    font-family: "Cantarell";
+    font-size: 0.73vw;
+}
+.footer .right-footer .social-symbole img{
+    margin: 0.73vw;
+}
+.footer .right-footer .suivre .suivre-social{
+    margin-left: -30%;
+    margin-bottom: 5%;
+}
+.footer .right-footer .loi p{
+    color: var(--blanc);
+    font-size: 0.73vw;
+    font-family: "Cantarell";
+}
