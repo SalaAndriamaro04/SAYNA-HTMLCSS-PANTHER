@@ -22,11 +22,7 @@ h2{
     font-family: "Cantarell";
     font-size: 1.02vw;
     color: var(--blanc);
-}
-
-footer{
-    font-family: "Cantarell";
-    font-size: 0.73vw;
+    text-align: justify;
 }
 
 .histoire{
@@ -36,6 +32,7 @@ footer{
 
 body{
     background: url(../images/all/arrière_plan.png);
+    width: 100%;
 }
 
 .container{
@@ -43,14 +40,15 @@ body{
     grid-template-columns: 5% 95%;
 }
 
+/*barre laterale de gauche*/
 .vertical-line1 {
-    border-left: 3px solid var(--gris-clair);
+    border-left: 0.21vw solid var(--gris-clair);
     min-height: 30vw;
     margin-top: -30%;
 }
 
 .vertical-line2 {
-    border-left: 3px solid var(--gris-clair); 
+    border-left: 0.21vw solid var(--gris-clair); 
     height: 21vw;
     margin-top: -30vw;
 }
@@ -66,34 +64,14 @@ body{
     flex-direction: column;
     gap: 1vw;
     list-style-type: none;
-    margin-left: -3.2vw;
-    margin-top: -8vw;
+    margin-left: -88%;
+    margin-top: -8.3vw;
 }
-
 .vertical-icon .icons img {
-    width: 1rem;
+    width: 1.1rem;
 }
 
 /*design header*/
-.style-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin:0 auto;
-}
-.style-header .logo img{
-    vertical-align: middle;
-}
-.style-header ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 1.09vw;
-    font-family: "BEYNO";
-}
-.style-header ul li a{
-    color: var(--rose-foncee);
-}
 .style-header ul li .wakanda{
     color: var(--blanc);
     text-decoration: none;
@@ -112,6 +90,7 @@ body{
 .presentation .text-presentation{
     margin-top: 20%;
     margin-bottom: 10%;
+    text-align: justify;
 }
 .presentation .image-presentation img{
     width: 51.24vw;
@@ -125,10 +104,10 @@ body{
 #acteur{
     display: flex;
     margin-left: 7vw;
-    margin-right: -0.6%;
+    margin-right: 0.6%;
     margin-top: 5vw;
     background-color: var(--noir);
-    height: 40vh;
+    height: 18.3vw;
 }
 #acteur .img{
     height: 18.3vw;
@@ -152,6 +131,8 @@ body{
 .textacteur p{
     text-align: justify;
     margin-top: -5%;
+    font-family: "Cantarell";
+    font-size: 1vw;
 }
 #acteur p,a{
     color: var(--blanc);
@@ -160,7 +141,7 @@ body{
     position: relative;
 }
 #acteur .rond{
-    border: 1px solid var(--noir);
+    border: 0.07vw solid var(--noir);
     border-radius: 50%;
     width: 21%;
     height: 12%;
@@ -168,7 +149,7 @@ body{
     background: var(--noir);
     margin-top: -90%;
     margin-left: 60%;
-    padding-top: 6px;
+    padding-top: 0.43vw;
     position: absolute;
     color: var(--blanc);
 }
@@ -185,11 +166,13 @@ body{
 .bio .naissance{
     margin-left: 5%;
     margin-top: 20%;
+    margin-right: 10%;
 }
 .bio .histoire{
     font-family: "Cantarell";
     font-size: 1em;
-    margin-bottom: 30px;
+    margin-bottom: 2.19vw;
+    text-align: justify;
 }
 .bio .right .biographie{
     background:var(--gris-clair);
@@ -207,7 +190,7 @@ body{
     margin-left: 5%;
 }
 .right .biographie .nom{
-    font-size: 28px;
+    font-size: 2.04vw;
     text-align: center;
     font-weight: bold;
 }
@@ -282,6 +265,7 @@ body{
 .contact .form-contact input{
     margin: 0.73vw;
     padding-left: 1.46vw;
+    font-size: 1em;
     width: 38.06vw;
     height: 4.09vw;
     border: 0.07vw solid var(--bleu-noir);
@@ -297,6 +281,7 @@ body{
     border-color: 0.07vw solid var(--bleu-noir);
     border-radius: 2.78vw;
     background: transparent;
+    font-size: 1em;
 }
 .contact .form-contact button{
     background: var(--blanc-rose);
@@ -306,75 +291,6 @@ body{
     border-radius: 2.78vw;
     margin: 0 auto;
     font-size: 1em;
-}
-
-/*footer*/
-/*partie gauche*/
-.footer{
-    background-image: url(../images/all/back_footer.png);
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-position: center;
-    padding-top: 30%;
-    padding-bottom: 3%;
-    margin-bottom: -10%;
-}
-.footer .image-footer{
-    margin-right: 15%;
-    margin-top: -40%;
-    position: relative;
-}
-.footer .right-footer{
-    margin-top: -45%;
-}
-.footer .image-footer .marvel{
-    position:absolute;
-    top: 8vw;
-    left: 27.5vw;
-}
-.footer .image-footer .marvel img{
-    width: 10vw;
-}
-.footer .image-footer img{
-    float: right;
-    width: 40%;
-}
-
-/*partie droite*/
-.footer .right-footer{
-    display: grid;
-    grid-template-rows:80% 20% ;
-}
-.footer .right-footer .suivre{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-h4{
-    color: var(--blanc);
-    font-family: "Cantarell";
-    font-size: 1em;
-    letter-spacing: 1em;
-}
-
-footer .text-footer{
-    margin-top: 10%;
-}
-footer .text-footer p{
-    color: var(--blanc);
-    font-family: "Cantarell";
-    font-size: 0.73vw;
-}
-.footer .right-footer .social-symbole img{
-    margin: 0.73vw;
-}
-.footer .right-footer .suivre .suivre-social{
-    margin-left: -30%;
-    margin-bottom: 5%;
-}
-.footer .right-footer .loi p{
-    color: var(--blanc);
-    font-size: 0.73vw;
-    font-family: "Cantarell";
 }
 
 

@@ -3,15 +3,14 @@
 /*----------------------------------------§§§--------------------------------------------------*/
 
 /*typograhies*/
-
 h1{
     font-family: "BEYNO";
-    font-size: 2em;
+    font-size: 3vw;
     color: var(--rose-foncee);
     font-weight: 300;
     line-height: 2.19vw;
+    text-align:justify;
 }
-
 h2{
     font-family: "Wakanda forever";
     font-size: 3.14vw;
@@ -24,28 +23,10 @@ h2{
 }
 body{
     background: url(../images/all/arrière_plan.png);
+    width: 100%;
 }
 
 /*design header*/
-.style-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin:0 auto;
-}
-.style-header .logo img{
-    vertical-align: middle;
-}
-.style-header ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 1.09vw;
-    font-family: "BEYNO";
-}
-.style-header ul li a{
-    color: var(--rose-foncee);
-}
 .style-header ul li .accueil{
     color: var(--blanc);
     text-decoration: none;
@@ -62,27 +43,40 @@ body{
     padding-top: -30%;
     margin-top: -2%;
 }
-.presentation .image-presentation img{
-    width: 65.88vw;
-    padding-top: -100%;
-    margin-left: -3%;  
+.presentation .image-presentation{
+    background-image: url(../images/enigme/Pantherenigme1.png);
+    background-repeat: no-repeat;
+    background-size: 62vw;
+    background-position-y: -12vw;
+    background-position-x: 3vw;
+    margin-top: 5%;
+
 }
+/*
+.presentation .image-presentation img{
+    position: absolute;
+    width: 55vw;
+    left: 15%;
+    bottom: 15%;
+}*/
 .presentation .contenu-presentation{
     margin-left: -10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 .presentation .contenu-presentation .titre-presentation{
-    margin-top: 15%;
-    padding-top: 1.46vw;
+    margin-top: -2%;
+    padding-top: -1.8vw;
     padding-bottom: 1.46vw;
-    padding-right: 10%;
+    padding-right: 0%;
     letter-spacing: 0.36vw;
-    margin-bottom: 8%;
+    margin-bottom: 3%;
     margin-left: 5%;
-    margin-right: 20%;
+    margin-right: 10%;
 }
 .presentation .contenu-presentation .titre-presentation h1{
-    padding-right: 20%;
-    line-height: 120%;
+    padding-right: 21%;
+    line-height: 3.5vw;
 }
 .presentation .contenu-presentation .text-presentation .conteneur-text{
     position: relative;
@@ -147,9 +141,11 @@ body{
     border: 0.07vw solid var(--rose-foncee);
     border-radius: 2.78vw;
     padding-left: 5%;
+    padding-bottom: 1.5%;
 }
 .langage .savoir .transcription .reponse ::placeholder{
     color: var(--rose-foncee);
+    font-size: 1vw;
 }
 .langage .savoir .transcription .reponse .envoie{
     margin-left: 30%;
@@ -186,72 +182,4 @@ body{
 .langage .savoir .savais-tu .conteneur-text .text{
     text-align: center;
     margin-top: -5%;
-}
-
-/*footer*/
-/*partie gauche*/
-.footer{
-    background-image: url(../images/all/back_footer.png);
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-position: center;
-    padding-top: 30%;
-    padding-bottom: 3%;
-    margin-bottom: -10%;
-}
-.footer .image-footer{
-    margin-right: 15%;
-    margin-top: -40%;
-    position: relative;
-}
-.footer .right-footer{
-    margin-top: -45%;
-}
-.footer .image-footer .marvel{
-    position:absolute;
-    top: 8vw;
-    left: 27.5vw;
-}
-.footer .image-footer .marvel img{
-    width: 10vw;
-}
-.footer .image-footer img{
-    float: right;
-    width: 40%;
-}
-
-/*partie droite*/
-.footer .right-footer{
-    display: grid;
-    grid-template-rows:80% 20% ;
-}
-.footer .right-footer .suivre{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-h4{
-    color: var(--blanc);
-    font-family: "Cantarell";
-    font-size: 1em;
-    letter-spacing: 1em;
-}
-footer .text-footer{
-    margin-top: 10%;
-}
-footer .text-footer p{
-    color: var(--blanc);
-    font-family: "Cantarell";
-    font-size: 0.73vw;
-}
-.footer .right-footer .social-symbole img{
-    margin: 0.73vw;
-}
-.footer .right-footer .suivre .suivre-social{
-    margin-left: -30%;
-    margin-bottom: 5%;
-}
-.footer .right-footer .loi p{
-    color: var(--blanc);
-    font-size: 0.73vw;
-    font-family: "Cantarell";
 }

@@ -24,6 +24,7 @@ h3{
 }
 body{
     background: url(../images/all/arrière_plan.png);
+    width: 100%;
 }
 p{
     font-family: "Cantarell";
@@ -32,27 +33,6 @@ p{
 }
 
 /*design header*/
-.style-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin:0 auto;
-    z-index: 3;
-}
-.style-header .logo img{
-    vertical-align: middle;
-}
-.style-header ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 1.09vw;
-    font-family: "BEYNO";
-}
-.style-header ul li a{
-    color: var(--rose-foncee);
-}
-
 .style-header nav ul li .accueil{
     color: var(--blanc);
     text-decoration: none;
@@ -61,6 +41,7 @@ p{
     color: var(--blanc);
     text-decoration: none;
 }
+
 /*design presentation*/
 .presentation {
     background-image: url(../images/wakanda/Pantherwakanda1.png);
@@ -99,8 +80,11 @@ p{
 .partie-un .left{
     text-align: justify;
     padding-left: 10%;
-    padding-right: 8%;
-    
+    padding-right: 8%; 
+}
+.partie-un .left iframe{
+    width: 36.5vw;
+    height: 30vw;
 }
 .partie-un .right{
     padding-left: 5%;
@@ -130,72 +114,7 @@ p{
     margin-left: -15%;
     margin-top: -5%;
 }
-
-/*footer*/
-/*partie gauche*/
-.footer{
-    background-image: url(../images/all/back_footer.png);
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-position: center;
-    padding-top: 30%;
-    padding-bottom: 3%;
-    margin-bottom: -10%;
-}
-.footer .image-footer{
-    margin-right: 15%;
-    margin-top: -40%;
-    position: relative;
-}
-.footer .right-footer{
-    margin-top: -45%;
-}
-.footer .image-footer .marvel{
-    position:absolute;
-    top: 8vw;
-    left: 27.5vw;
-}
-.footer .image-footer .marvel img{
-    width: 10vw;
-}
-.footer .image-footer img{
-    float: right;
-    width: 40%;
-}
-
-/*partie droite*/
-.footer .right-footer{
-    display: grid;
-    grid-template-rows:80% 20% ;
-}
-.footer .right-footer .suivre{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-h4{
-    color: var(--blanc);
-    font-family: "Cantarell";
-    font-size: 1em;
-    letter-spacing: 1em;
-}
-footer .text-footer{
-    margin-top: 10%;
-}
-footer .text-footer p{
-    color: var(--blanc);
-    font-family: "Cantarell";
-    font-size: 0.73vw;
-}
-.footer .right-footer .social-symbole img{
-    margin: 0.73vw;
-}
-.footer .right-footer .suivre .suivre-social{
-    margin-left: -30%;
-    margin-bottom: 5%;
-}
-.footer .right-footer .loi p{
-    color: var(--blanc);
-    font-size: 0.73vw;
-    font-family: "Cantarell";
+.partie-deux .right .representation img{
+    width: 40vw;
 }
 
