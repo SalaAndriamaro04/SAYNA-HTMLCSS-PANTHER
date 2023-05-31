@@ -145,6 +145,10 @@ footer .text-footer p{
     margin-top: -5%;
 }
 
+/*position fixe barre laterale*/
+.scrolling {
+    position:fixed ;
+}
 
 /*animation menu de navigation*/
 #header .style-header a:hover{
